@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: finance-zorvyn-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: JWT_SECRET
+        value: your_secret_key_here
+databases:
+  - name: sqlite-db
+    databaseName: finance
+    region: oregon
