@@ -7,7 +7,6 @@ const db = new sqlite3.Database('database.sqlite', (err) => {
 });
 
 const email = 'john@example.com'; // change to your user email
-
 db.run(
   'UPDATE users SET role = ?, status = ? WHERE email = ?',
   ['admin', 'active', email],
