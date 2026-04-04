@@ -196,60 +196,10 @@ pm.request.headers.add({ key:"Authorization", value:"Bearer " + pm.environment.g
 
 ---
 
-## Future Improvements
-- Add pagination and search
-- Add unit/integration tests
-- Add Swagger API docs
-- Add soft-delete for records
-- Add role request flow + admin dashboard
-
----
-
-## Quick commands
-```bash
-cd "C:/Users/Suresh/Desktop/dhivya/Finance_Zorvyn"
-npm install
-npm start
-node promoteAdmin.js
-```
-
-## Forms: feature checklist
-- [x] User and Role Management
-- [x] Financial Records CRUD
-- [x] Record Filtering
-- [x] Dashboard Summary APIs
-- [x] Role Based Access Control
-- [x] Input Validation and Error Handling
-- [x] Data Persistence (Database)
-
----
-
 ## Final note
 Project is assignment-complete and ready for evaluation. Provide GitHub URL and Postman collection for verification.
 
-## GitHub Publish Instructions
-1. Create `.gitignore` with:
-   - `node_modules`
-   - `.env`
-   - `database.sqlite`
-   - `npm-debug.log`
-
-2. Initialize and push repo:
-```bash
-cd "C:\Users\Suresh\Desktop\dhivya\Finance_Zorvyn"
-git init
-git add .
-git commit -m "Initial finance backend implementation"
-# create repository on GitHub web then copy URL
-# example: https://github.com/<username>/finance-zorvyn-backend.git
-git remote add origin https://github.com/<username>/finance-zorvyn-backend.git
-git branch -M main
-git push -u origin main
-```
-
-3. Check with `git status`, `git log`, and confirmed remote.
-
-## Quick Functionality Check (before or after Git push)
+## Quick Functionality Check 
 1. Start server: `npm start`
 2. Login as admin: `POST /auth/login` (get token)
 3. Summary: `GET /summary` with admin/analyst token
